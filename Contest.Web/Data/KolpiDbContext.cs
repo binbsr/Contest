@@ -51,9 +51,9 @@ namespace Contest.Data
                 .HasOne(a => a.KolpiUser);
 
             builder.Entity<IdentityRole>().HasData(
-                new IdentityRole { Id = Guid.NewGuid().ToString(), Name = Role.SuperAdmin },
-                new IdentityRole { Id = Guid.NewGuid().ToString(), Name = Role.Admin },
-                new IdentityRole { Id = Guid.NewGuid().ToString(), Name = Role.Participant }
+                new IdentityRole { Id = Guid.NewGuid().ToString(), Name = Role.SuperAdmin, NormalizedName = Role.SuperAdmin.ToUpper() },
+                new IdentityRole { Id = Guid.NewGuid().ToString(), Name = Role.Admin, NormalizedName = Role.Admin.ToUpper() },
+                new IdentityRole { Id = Guid.NewGuid().ToString(), Name = Role.Participant, NormalizedName = Role.Participant.ToUpper() }
             );
         }
     }

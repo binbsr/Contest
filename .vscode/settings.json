@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "Contest.Web\\bin\\Release\\net6.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/3d805784-de72-49da-9753-6de3697d7735/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.Web/sites/CotivitiHackathon2023"
+}
